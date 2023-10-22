@@ -12,7 +12,14 @@ import lombok.*;
 public class NumberDTO {
     private double originalNumber;
     private double multipliedBy2;
+
+    public NumberDTO(double originalNumber) {
+        this.originalNumber = originalNumber;
+    }
+
     private double squaredResult;
+
+
 
 }
 

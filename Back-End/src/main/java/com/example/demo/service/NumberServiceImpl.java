@@ -3,17 +3,14 @@ package com.example.demo.service;
 import com.example.demo.dtos.NumberDTO;
 import com.example.demo.entity.NumberEntity;
 import com.example.demo.repository.NumberRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class NumberServiceImpl implements NumberService {
     private final NumberRepository numberRepository;
-
-    @Autowired
-    public NumberServiceImpl(NumberRepository numberRepository) {
-        this.numberRepository = numberRepository;
-    }
 
     @Override
     public NumberDTO saveNumber(NumberDTO numberDTO) {
