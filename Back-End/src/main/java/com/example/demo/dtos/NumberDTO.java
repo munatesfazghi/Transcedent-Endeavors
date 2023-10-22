@@ -2,13 +2,11 @@ package com.example.demo.dtos;
 
 
 import com.example.demo.NumberProApplication;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class NumberDTO {

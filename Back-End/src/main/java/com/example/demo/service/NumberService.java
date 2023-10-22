@@ -1,9 +1,9 @@
 package com.example.demo.service;
 
+import com.example.demo.dtos.NumberDTO;
 
-
-public class NumberService {
-
+public interface NumberService {
+        NumberDTO saveNumber(NumberDTO numberDTO);
 
 
 }
